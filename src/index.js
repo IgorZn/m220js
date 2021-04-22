@@ -5,6 +5,7 @@ import UsersDAO from "./dao/usersDAO"
 import CommentsDAO from "./dao/commentsDAO"
 
 const port = process.env.PORT || 8000
+const HOST = process.env.HOST || "http://localhost"
 
 /**
 Ticket: Connection Pooling
@@ -37,6 +38,6 @@ MongoClient.connect(
     await UsersDAO.injectDB(client)
     await CommentsDAO.injectDB(client)
     app.listen(port, () => {
-      console.log(`listening on port ${port}`)
+      console.log(`listening on port ${HOST}:${port}`)
     })
   })
