@@ -22,7 +22,7 @@ describe("Text and Subfield Search", () => {
       filters,
     })
     expect(moviesList.length).toEqual(20)
-    expect(totalNumMovies).toEqual(2539)
+    expect(totalNumMovies).toEqual(23530)
     const firstMovie = moviesList[0]
     expect(firstMovie["title"]).toEqual("Gladiator")
   })
@@ -33,7 +33,7 @@ describe("Text and Subfield Search", () => {
       filters,
     })
     expect(moviesList.length).toEqual(20)
-    expect(totalNumMovies).toEqual(3485)
+    expect(totalNumMovies).toEqual(23530)
     const firstMovie = moviesList[0]
     expect(firstMovie["title"]).toEqual("2 Fast 2 Furious")
   })
